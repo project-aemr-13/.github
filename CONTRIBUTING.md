@@ -8,6 +8,10 @@ override these with their own `CONTRIBUTING.md`.
 - Branch from `staging` using `feature/<name>` or `bugfix/<name>`.
 - Open pull requests against `staging`. `main` is the production branch and stays in sync
   with `staging` (no version skew).
+- Production is updated only by merging the `staging` → `main` release PR. Urgent fixes may
+  go straight to `main` from a `hotfix/<name>` branch; nothing else targets `main`.
+- Repositories without a `staging` branch use `main` only: branch from `main` and open
+  pull requests against `main`.
 
 ## Commits
 
